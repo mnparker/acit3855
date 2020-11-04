@@ -1,0 +1,57 @@
+openapi: 3.0.0
+info:
+ description: This API provides event stats
+ version: "1.0.0"
+ title: Stats API
+ contact:
+  email: michaelnparker@gmail.com
+paths:
+ /stats:
+   get:
+     summary: Gets the event stats
+     operationId: app.get_stats
+     description: Gets Blood Pressure and Heart Rate processsed statistics
+     responses:
+      '200':
+       description: Successfully returned a list of blood pressure events
+       content:
+        application/json:
+          schema:
+            type: object
+            items:
+              $ref: '#/components/schemas/SensorStats'
+      '400':
+        description: Invalid request
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+components:
+  schemas:
+    SensorStats:
+      required:
+      - num_aq_readings
+      - max_so2_reading
+      - max_co_reading
+      - num_eq_readings
+      - max_ws_reading
+      properties:
+        num_aq_readings:
+          type: integer
+          example: 500000
+        max_so2_reading:
+         type: integer
+         example: 200
+        max_co_reading:
+         type: integer
+         example: 180
+        num_eq_readings:
+         type: integer
+         example: 500000
+        max_ws_reading:
+         type: integer
+         example: 250
+      type: object

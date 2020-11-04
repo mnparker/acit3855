@@ -1,0 +1,11 @@
+version: 1
+datastore:
+ user: mike
+ password: P@ssw0rd
+ hostname: kafka-acit3855.canadacentral.cloudapp.azure.com
+ port: 3306
+ db: sensor_readings
+events:
+ hostname: kafka-acit3855.canadacentral.cloudapp.azure.com
+ port: 9092
+ topic: events

@@ -1,0 +1,175 @@
+openapi: 3.0.0
+info:
+  description: This API recieves readings from enviornmental sensors
+  version: "1.0.0"
+  title: Sensor API
+  contact:
+    email: michaelnparker@gmail.com
+tags:
+  - name: sensors
+    description: Operations available to sensors
+    
+paths:
+  /sensors/air_quality:
+    post:
+      tags:
+        - sensor
+      summary: reports air pollutants
+      operationId: app.measure_air_quality
+      description: Adds a new air measurement
+      responses:
+        '201':
+          description: measurement recorded
+        '400':
+          description: bad input parameter
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AirQualityReading'
+        description: reading air quality
+    get:
+      tags:
+        - sensor
+      summary: gets new air quality readings
+      operationId: app.get_air_quality_readings
+      description: Gets air quality readings added after a timestamp
+      parameters:
+        - name: timestamp
+          in: query
+          description: Limits the number of items on a page
+          schema:
+            type: string
+            format: date-time
+            example: 2016-08-29T09:12:33.001Z
+      responses:
+        '200':
+          description: Successfully returned a list of air reading events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AirQualityReading'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+      
+        
+  /sensors/measure_environment:
+    post:
+      tags:
+        - sensor
+      summary: reports current environment details
+      operationId: app.measure_environment
+      description: Adds a new environment reading
+      responses:
+        '201':
+          description: measurement recorded
+        '400':
+          description: 'bad input parameter'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EnvironmentReading'
+        description: Reading environment
+    get:
+      tags:
+        - sensor
+      summary: gets new environment quality readings
+      operationId: app.get_env_quality_readings
+      description: Gets environment quality readings added after a timestamp
+      parameters:
+        - name: timestamp
+          in: query
+          description: Limits the number of items on a page
+          schema:
+            type: string
+            format: date-time
+            example: 2016-08-29T09:12:33.001Z
+      responses:
+        '200':
+          description: Successfully returned a list of environment reading events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EnvironmentReading'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+    
+components:
+  schemas:
+    AirQualityReading:
+      required:
+        - sensor_id
+        - so2
+        - co
+        - no2
+        - timestamp
+      properties:
+        sensor_id:
+          type: string
+          format: uuid
+          example: c7dc66ec-61d6-488f-ba09-fe1cc87fff67
+        so2:
+          type: number
+          example: 0.23
+        co:
+          type: number
+          example: 0.00033
+        no2:
+          type: number
+          example: 0.00233
+        timestamp:
+          type: string
+          format: date-time
+          example: '2017-11-29T03:45:26.001Z'
+      type: object
+      
+    EnvironmentReading:
+        required:
+          - sensor_id
+          - humidity
+          - temp
+          - wind_speed
+          - wind_dir
+          - timestamp
+        properties:
+          sensor_id:
+            type: string
+            format: uuid
+            example: c7dc66ec-61d6-488f-ba09-fe1cc87fff67
+          humidity:
+            type: number
+            example: 0.23
+          temp:
+            type: number
+            example: 15.6
+          wind_speed:
+            type: number
+            example: 45.6
+          wind_dir:
+            type: number
+            example: 127
+          timestamp:
+            type: string
+            format: date-time
+            example: '2017-11-29T03:45:26.001Z'
+        type: object
+
