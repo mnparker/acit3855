@@ -4,6 +4,6 @@ air_reading:
 env_reading:
  url: http://localhost:8090/sensors/measure_environment
 events:
- hostname: kafka-acit3855.canadacentral.cloudapp.azure.com
+ hostname: localhost
  port: 9092
  topic: events
