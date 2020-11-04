@@ -1,0 +1,56 @@
+2020-10-29 15:26:37,823 - basicLogger - INFO - Retrieving ER at index 20
+2020-10-29 15:26:37,982 - basicLogger - INFO - Found ER id: 4092f0b0-a6e3-47be-be92-0dcbaa2ba443 at Index: 20
+2020-10-29 15:28:05,803 - basicLogger - INFO - Retrieving ER at index 2
+2020-10-29 15:28:05,953 - basicLogger - INFO - Found ER id: d07146b8-b690-4056-a8c7-6af819a86f42 at Index: 2
+2020-10-29 15:28:09,411 - basicLogger - INFO - Retrieving AR at index 200
+2020-10-29 15:28:09,874 - basicLogger - ERROR - Could not find AQ at index 200
+2020-10-29 15:28:13,369 - basicLogger - INFO - Retrieving AR at index 16
+2020-10-29 15:28:13,521 - basicLogger - INFO - Found AR id: 83f1abc6-bd5c-4390-ae3d-bdb2ecc415b3 at Index: 16
+2020-10-29 15:28:17,471 - basicLogger - INFO - Retrieving AR at index 15
+2020-10-29 15:28:17,618 - basicLogger - INFO - Found AR id: b389b07a-ed9a-48e2-a1bf-7e3bbda7953a at Index: 15
+2020-10-29 15:28:22,815 - basicLogger - INFO - Retrieving ER at index 8
+2020-10-29 15:28:22,960 - basicLogger - INFO - Found ER id: d1048eac-54c4-4a1d-83f9-563f21392ab9 at Index: 8
+2020-10-29 15:37:23,181 - basicLogger - INFO - Retrieving ER at index 8
+2020-10-29 15:37:23,334 - basicLogger - INFO - Found ER id: d1048eac-54c4-4a1d-83f9-563f21392ab9 at Index: 8
+2020-10-29 15:37:26,486 - basicLogger - INFO - Retrieving AR at index 15
+2020-10-29 15:37:26,633 - basicLogger - INFO - Found AR id: b389b07a-ed9a-48e2-a1bf-7e3bbda7953a at Index: 15
+2020-10-29 15:37:29,352 - basicLogger - INFO - Retrieving AR at index 150
+2020-10-29 15:37:29,813 - basicLogger - ERROR - Could not find AQ at index 150
+2020-10-29 15:37:33,994 - basicLogger - INFO - Retrieving ER at index 800
+2020-10-29 15:37:34,951 - basicLogger - ERROR - Could not find AQ at index 800
+2020-10-29 15:38:50,716 - basicLogger - INFO - Retrieving ER at index 80
+2020-10-29 15:38:51,669 - basicLogger - ERROR - Could not find AQ at index 80
+2020-10-29 15:38:57,051 - basicLogger - INFO - Retrieving ER at index 32
+2020-10-29 15:38:58,016 - basicLogger - ERROR - Could not find AQ at index 32
+2020-10-29 15:40:34,280 - basicLogger - INFO - Retrieving ER at index 32
+2020-10-29 15:40:34,508 - basicLogger - INFO - Found ER id: 48bb77b2-4e61-449c-9209-71dfee56d194 at Index: 32
+2020-10-29 15:40:36,999 - basicLogger - INFO - Retrieving ER at index 32
+2020-10-29 15:40:37,229 - basicLogger - INFO - Found ER id: 48bb77b2-4e61-449c-9209-71dfee56d194 at Index: 32
+2020-10-29 15:41:39,947 - basicLogger - INFO - Retrieving ER at index 65
+2020-10-29 15:41:40,984 - basicLogger - ERROR - Could not find AQ at index 65
+2020-10-29 15:41:46,774 - basicLogger - INFO - Retrieving ER at index 60
+2020-10-29 15:41:47,812 - basicLogger - ERROR - Could not find AQ at index 60
+2020-10-29 15:42:06,318 - basicLogger - INFO - Retrieving ER at index 60
+2020-10-29 15:42:07,359 - basicLogger - ERROR - Could not find AQ at index 60
+2020-10-29 15:42:09,176 - basicLogger - INFO - Retrieving ER at index 60
+2020-10-29 15:42:10,218 - basicLogger - ERROR - Could not find AQ at index 60
+2020-10-29 15:42:11,792 - basicLogger - INFO - Retrieving ER at index 60
+2020-10-29 15:42:12,826 - basicLogger - ERROR - Could not find AQ at index 60
+2020-10-29 15:42:30,486 - basicLogger - INFO - Retrieving ER at index 55
+2020-10-29 15:42:31,528 - basicLogger - ERROR - Could not find AQ at index 55
+2020-10-29 15:42:37,822 - basicLogger - INFO - Retrieving ER at index 4
+2020-10-29 15:42:38,053 - basicLogger - INFO - Found ER id: 24b8da54-be4b-4b5a-85f4-4c8d2635245a at Index: 4
+2020-10-29 15:42:41,766 - basicLogger - INFO - Retrieving ER at index 25
+2020-10-29 15:42:41,995 - basicLogger - INFO - Found ER id: 3de7d78c-5330-4b42-9dce-202463d49f03 at Index: 25
+2020-10-29 15:45:50,332 - basicLogger - INFO - Retrieving ER at index 20
+2020-10-29 15:45:50,486 - basicLogger - INFO - Found ER id: 4c5fb1fd-afbd-45ec-bbe5-d20218ffa59c at Index: 20
+2020-10-29 15:55:10,539 - basicLogger - INFO - Retrieving AR at index 15
+2020-10-29 15:55:10,857 - basicLogger - INFO - Found AR id: b1a5d8c5-6f15-4b8e-be5c-d8d68fe3a94b at Index: 15
+2020-10-29 15:55:17,071 - basicLogger - INFO - Retrieving AR at index 1500
+2020-10-29 15:55:18,203 - basicLogger - ERROR - Could not find AQ at index 1500
+2020-10-29 15:55:24,613 - basicLogger - INFO - Retrieving ER at index 20
+2020-10-29 15:55:24,920 - basicLogger - INFO - Found ER id: 4c5fb1fd-afbd-45ec-bbe5-d20218ffa59c at Index: 20
+2020-10-29 15:55:27,530 - basicLogger - INFO - Retrieving ER at index 200
+2020-10-29 15:55:27,836 - basicLogger - INFO - Found ER id: 52f7636b-e819-4003-8fb5-dde8a11524b4 at Index: 200
+2020-10-29 15:55:30,435 - basicLogger - INFO - Retrieving ER at index 2000
+2020-10-29 15:55:31,560 - basicLogger - ERROR - Could not find AQ at index 2000
