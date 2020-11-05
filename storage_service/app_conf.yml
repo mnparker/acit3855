@@ -6,6 +6,6 @@ datastore:
  port: 3306
  db: sensor_readings
 events:
- hostname: localhost
+ hostname:  http://localhost
  port: 9092
  topic: events
