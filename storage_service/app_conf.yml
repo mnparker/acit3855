@@ -6,6 +6,6 @@ datastore:
  port: 3306
  db: sensor_readings
 events:
- hostname:  http://localhost
+ hostname:  kafka-acit3855.canadacentral.cloudapp.azure.com
  port: 9092
  topic: events
