@@ -48,7 +48,14 @@ services:
         ports:
             - "8080:8080"
         depends_on: 
-            - "kafka"      
+            - "kafka"
+    storage:
+        image: storage
+        ports:
+            - "8090:8090"
+        depends_on: 
+            - "kafka"
+            - "db"      
 # Names our volume
 volumes:
   my-db:
