@@ -55,7 +55,20 @@ services:
             - "8090:8090"
         depends_on: 
             - "kafka"
-            - "db"      
+            - "db"  
+    processing:
+        image: processing
+        ports:
+            - "8100:8100"
+        network_mode: "host"
+        depends_on: 
+            - "storage" 
+    audit_log:
+        image: audit 
+        ports:
+            - "8110:8110"
+        depends_on: 
+            - "kafka"   
 # Names our volume
 volumes:
   my-db:
