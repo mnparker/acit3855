@@ -43,8 +43,8 @@ def populate_stats():
     """Periodically update stats"""
     logger.info(f"------------------Starting Periodic Processing----------")
 
-    if os.path.isfile('data.json'):
-        with open('data.json', 'r') as file:
+    if os.path.isfile(FILE):
+        with open(FILE, 'r') as file:
             stats = file.read()
             stats = json.loads(stats)
             file.close()
@@ -86,7 +86,7 @@ def populate_stats():
     stats['num_aq_readings'] += len(air_stats)
     stats['num_eq_readings'] += len(env_stats)
     stats['last_check'] = str(datetime.datetime.now())
-    with open('data.json', 'w') as file:
+    with open(FILE, 'w') as file:
         file.write(json.dumps(stats, indent=4))
 
     logger.debug(f"AQ Readings: {stats['num_aq_readings']}"
