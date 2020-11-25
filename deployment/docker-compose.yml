@@ -94,3 +94,7 @@ services:
 volumes:
   my-db:
   processing-db:
+
+# Networks
+networks:
+    api.network:
