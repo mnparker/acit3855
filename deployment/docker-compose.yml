@@ -97,7 +97,7 @@ services:
             - /home/azureuser/logs:/logs
         depends_on: 
             - "kafka"
-     nginx:
+    nginx:
         image: nginx:latest
         # Connects the conf file of the container to the conf file in our folder
         volumes:
