@@ -115,7 +115,7 @@ def get_env_quality_readings(timestamp):
         results_list.append(reading.to_dict())
 
     session.close()
-    logger.info(f"Query for Environment Quality readings after {timestamp} returns {len(results_list)}")
+    logger.info(f"ADSFADSFADSFASDFQuery for Environment Quality readings after {timestamp} returns {len(results_list)}")
     return results_list, 200
 
 
